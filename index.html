@@ -13,11 +13,12 @@
 			border: 0 none;
 			padding: 0;
 			text-align: center;
-			background-color: black;
+			background-color: #3b3b3b;
 		}
 
 		#canvas {
-			display: block;
+			width: 1024px;
+			height: 1024px;
 			margin: 0;
 			color: white;
 		}
@@ -111,11 +112,25 @@
 			padding: 4px 6px;
 			visibility: visible;
 		}
+
+		#header {
+			color: white;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		}
+		#header a {
+			color: cyan;
+		}
 	</style>
 
 </head>
 <body>
-	<h1>Title</h1>
+	<div id="header">
+		<h1>Conway's Game of Blokus</h1>
+		Use the mouse to drag pieces onto the board.<br>
+		While dragging a piece, use the 'R' key to rotate it and the 'F' key to flip it.<br>
+		After each turn, the rules of <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a> are applied to the entire board.<br>
+		Your score is the number of live cells of your color. The game ends after all pieces have been played.
+	</div>
 
 	<canvas id='canvas'>
 		HTML5 canvas appears to be unsupported in the current browser.<br />
@@ -165,17 +180,17 @@
 			}
 			requestAnimationFrame(animate);
 
-			function adjustCanvasDimensions() {
-				var scale = window.devicePixelRatio || 1;
-				var width = window.innerWidth;
-				var height = window.innerHeight;
-				canvas.width = width * scale;
-				canvas.height = height * scale;
-				canvas.style.width = width + "px";
-				canvas.style.height = height + "px";
-			}
-			animationCallbacks.push(adjustCanvasDimensions);
-			adjustCanvasDimensions();
+			// function adjustCanvasDimensions() {
+			// 	var scale = window.devicePixelRatio || 1;
+			// 	var width = window.innerWidth;
+			// 	var height = window.innerHeight;
+			// 	canvas.width = width * scale;
+			// 	canvas.height = height * scale;
+			// 	canvas.style.width = width + "px";
+			// 	canvas.style.height = height + "px";
+			// }
+			// animationCallbacks.push(adjustCanvasDimensions);
+			// adjustCanvasDimensions();
 
 			setStatusMode = function setStatusMode(mode) {
 
