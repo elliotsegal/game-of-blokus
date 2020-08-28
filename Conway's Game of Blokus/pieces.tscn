@@ -1,0 +1,112 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://game_piece.gd" type="Script" id=1]
+[ext_resource path="res://piece_container.gd" type="Script" id=2]
+
+[node name="Pieces" type="Node2D"]
+position = Vector2( 96, 32 )
+script = ExtResource( 2 )
+
+[node name="PieceA" type="Area2D" parent="."]
+script = ExtResource( 1 )
+tiles = PoolVector2Array( 0, 0 )
+
+[node name="PieceB" type="Area2D" parent="."]
+position = Vector2( 128, 64 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( 0, 0, 0, 1 )
+
+[node name="PieceC" type="Area2D" parent="."]
+position = Vector2( 96, 0 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( -1, 0, 0, 0, 1, 0 )
+
+[node name="PieceD" type="Area2D" parent="."]
+position = Vector2( 320, 32 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( 0, 0, -1, 0, 0, -1 )
+
+[node name="PieceE" type="Area2D" parent="."]
+position = Vector2( 224, 128 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( 1, -1, 0, -1, 0, 0, -1, 0 )
+
+[node name="PieceF" type="Area2D" parent="."]
+position = Vector2( 192, 0 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( 0, 0, 1, 0, 1, 1, 0, 1 )
+
+[node name="PieceG" type="Area2D" parent="."]
+position = Vector2( 320, 128 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( 0, 0, -1, 0, 1, 0, 0, -1 )
+
+[node name="PieceH" type="Area2D" parent="."]
+position = Vector2( 352, 192 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( -1, 0, 0, 0, 1, 0, 1, -1 )
+
+[node name="PieceI" type="Area2D" parent="."]
+position = Vector2( 384, 32 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( 0, -1, 0, 0, 0, 1, 0, 2 )
+
+[node name="PieceJ" type="Area2D" parent="."]
+position = Vector2( 704, 96 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( -1, 0, 0, 0, 0, 1, -1, 1, 1, 1 )
+
+[node name="PieceK" type="Area2D" parent="."]
+position = Vector2( 672, 32 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( -1, -1, 0, -1, 0, 0, 1, 0, 2, 0 )
+
+[node name="PieceL" type="Area2D" parent="."]
+position = Vector2( 448, 160 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( 0, -2, 0, -1, 0, 0, 0, 1, 1, 1 )
+
+[node name="PieceM" type="Area2D" parent="."]
+position = Vector2( 192, 192 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( -2, 0, -1, 0, 0, 0, 1, 0, 2, 0 )
+
+[node name="PieceN" type="Area2D" parent="."]
+position = Vector2( 32, 192 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( -1, -1, -1, 0, 0, 0, 1, 0, 1, -1 )
+
+[node name="PieceO" type="Area2D" parent="."]
+position = Vector2( 544, 160 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( -1, -1, 0, -1, 0, 0, 0, 1, 1, 1 )
+
+[node name="PieceP" type="Area2D" parent="."]
+position = Vector2( 640, 160 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( -1, -1, -1, 0, 0, 0, 0, 1, 1, 1 )
+
+[node name="PieceQ" type="Area2D" parent="."]
+position = Vector2( 480, 0 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( 0, 2, 0, 1, 0, 0, 1, 0, 2, 0 )
+
+[node name="PieceR" type="Area2D" parent="."]
+position = Vector2( 832, 160 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( -2, 0, -1, 0, 0, 0, 0, -1, 0, 1 )
+
+[node name="PieceS" type="Area2D" parent="."]
+position = Vector2( 800, 32 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( 0, -1, 0, 0, 1, 0, 0, 1, -1, 1 )
+
+[node name="PieceT" type="Area2D" parent="."]
+position = Vector2( 32, 96 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( 0, 0, -1, 0, 1, 0, 0, -1, 0, 1 )
+
+[node name="PieceU" type="Area2D" parent="."]
+position = Vector2( 608, 64 )
+script = ExtResource( 1 )
+tiles = PoolVector2Array( -2, 0, -1, 0, 0, 0, 1, 0, 0, -1 )
